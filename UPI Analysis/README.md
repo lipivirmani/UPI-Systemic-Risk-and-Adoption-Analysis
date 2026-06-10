@@ -49,9 +49,6 @@ UPI Analysis/
 │   ├── merchant/                # Cluster scatter plot
 │   └── statewise/               # State cluster scatter plot
 │
-├── paper/
-│   └── research_paper.html      # Full paper (HTML, print-ready)
-│
 └── UPI Dashboard.pdf            # Exported Power BI dashboard (PDF)
 ```
 

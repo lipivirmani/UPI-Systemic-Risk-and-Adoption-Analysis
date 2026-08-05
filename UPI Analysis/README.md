@@ -126,12 +126,17 @@ The Power BI dashboard includes:
 
 # 💡 Key Business Insights
 
-- UPI transaction volumes continue to expand while Average Ticket Size demonstrates distinct structural trends.
-- Merchant payments are increasingly dominated by low-value, high-frequency transactions, reflecting widespread adoption for everyday purchases.
-- The UPI application ecosystem remains highly concentrated, with PhonePe and Google Pay accounting for the majority of transaction volume.
-- Approval rates consistently remain above 90%, highlighting strong operational reliability despite isolated technical decline across select banks.
-- Regional analysis reveals varying levels of digital payment maturity across Indian states and union territories.
+#### 1. Market Concentration & The "Duopoly" Vulnerability
+* **Dominance Paradox:** PhonePe (50.4%) and Google Pay (38.2%) capture **88.6% of total network volume**, creating a single-point-of-failure risk for national retail commerce.
+* **Niche App Polarization:** While mass volume stays with the top 2 apps, high-ticket value transactions skew toward specialized platforms like **YuvaPay** (ATS ~₹2,382), and high MoM growth is driven by credit-focused platforms like **OneCard** (+47.6%).
 
+#### 2. Network Load & Banking Uptime Failure Points
+* **Infrastructure Strain:** The ecosystem handles **22.8B transactions (~₹28.4T value)** across **705 connected banks**.
+* **Core Remitter Vulnerability:** Systemic availability hinges on a few major remittance anchors—primarily **SBI, HDFC Bank, and Bank of Baroda**. Outages or high Technical Decline (TD) rates at these 3 institutions ripple across the entire P2P/P2M settlement layer.
+
+#### 3. P2M Dominance & Micro-Payment Stabilization
+* **Commercial Shift:** Peer-to-Merchant (P2M) volume now outpaces P2P transfers, confirming UPI’s shift from personal transfers to everyday commerce.
+* **Spend Profile:** Average Ticket Size (ATS) has stabilized around **₹608**, driven by high-frequency micro-transactions in **Groceries & Supermarkets**, with **Online Marketplaces** representing the fastest-growing spend category (+23.7% MoM).
 ---
 
 # 🗂️ Repository Structure
@@ -167,22 +172,22 @@ UPI Analysis/
 
 # 📂 Repository Contents
 
-### dashboard/
+### dashboard
 Interactive Power BI dashboard, exported report and dashboard screenshots.
 
-### data/
+### data
 Processed NPCI datasets organised by analytical domain.
 
-### src/
+### src
 Python scripts covering preprocessing, forecasting, clustering and analytical workflows.
 
-### eda/
+### eda
 Exploratory Data Analysis outputs and generated visualisations.
 
-### models/
+### models
 Machine learning outputs including forecasting comparisons, feature importance, clustering and analytical visualisations.
 
-### research/
+### research
 Research paper and supporting documentation.
 
 ---
@@ -223,7 +228,7 @@ Coverage Period:
 
 **April 2022 – March 2026**
 
-https://www.npci.org.in/product/bhim/product-statistics
+https://www.npci.org.in/product/upi/product-statistics
 
 ---
 
